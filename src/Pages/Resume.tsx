@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Styles/Home.css";
 import SystemUpdateIcon from '@material-ui/icons/SystemUpdate';
 import {Button, createTheme, ThemeProvider} from "@material-ui/core";
 
@@ -26,6 +27,7 @@ function Resume() {
                         color="primary"
                         startIcon={<SystemUpdateIcon/>}
                         href="MilaanDahiyaResume.pdf"
+                        className="download-button"
                     >
                         Download
                     </Button>
