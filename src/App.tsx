@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Home from "./Home";
-import Resume from "./Resume";
-import NotFound from "./NotFound";
+import Home from "./Pages/Home";
+import Resume from "./Pages/Resume";
+import NotFound from "./Pages/NotFound";
 
 function App() {
     return (
