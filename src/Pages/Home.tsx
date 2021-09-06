@@ -1,7 +1,7 @@
-import React from 'react';
-import '../Styles/Home.css';
+import React from "react";
+import "../Styles/Home.css";
 import {Button, Grid, createTheme, ThemeProvider} from "@material-ui/core";
-import DescriptionIcon from '@material-ui/icons/Description';
+import DescriptionIcon from "@material-ui/icons/Description";
 import {useHistory} from "react-router-dom";
 
 function Home() {
