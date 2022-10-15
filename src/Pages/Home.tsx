@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/Home.css";
 import {Button, Grid, createTheme, ThemeProvider} from "@material-ui/core";
 import DescriptionIcon from "@material-ui/icons/Description";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import {useHistory} from "react-router-dom";
 
 function Home() {
@@ -24,19 +25,30 @@ function Home() {
                     <div className="shape-blob three"/>
                     <div className="shape-blob four"/>
                 </Grid>
-                <Grid item xs={12}>
-                    <ThemeProvider theme={theme}>
+                <ThemeProvider theme={theme}>
+                    <Grid item xs = {12}>
                         <Button
                             size="large"
                             variant="contained"
                             color="primary"
+                            style={{marginRight: '40px', marginLeft: '40px', marginTop: '20px', marginBottom: '20px'}}
                             startIcon={<DescriptionIcon />}
                             onClick={() => history.push("/resume")}
                         >
                             Resume
                         </Button>
-                    </ThemeProvider>
-                </Grid>
+                        <Button
+                            size="large"
+                            variant="contained"
+                            color="primary"
+                            style={{marginRight: '40px', marginLeft: '40px', marginTop: '20px', marginBottom: '20px'}}
+                            startIcon={<GitHubIcon />}
+                            onClick={() => window.location.href = "https://github.com/milaandahiya"}
+                        >
+                            GitHub
+                        </Button>
+                    </Grid>
+                </ThemeProvider>
             </Grid>
         </div>
     );
