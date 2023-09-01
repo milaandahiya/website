@@ -15,7 +15,7 @@ function Resume() {
     return (
         <div style={{backgroundColor: "#525659"}}>
             <object
-                data="MilaanDahiyaResume.pdf"
+                data="Milaan-Dahiya-Resume.pdf"
                 type="application/pdf"
                 height="1150px"
                 width="100%"
@@ -27,7 +27,7 @@ function Resume() {
                             variant="contained"
                             color="primary"
                             startIcon={<SystemUpdateIcon/>}
-                            href="MilaanDahiyaResume.pdf"
+                            href="Milaan-Dahiya-Resume.pdf"
                             className="download-button"
                         >
                             Download
