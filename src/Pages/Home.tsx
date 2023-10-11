@@ -1,9 +1,7 @@
-import React from "react";
 import "../Styles/Home.css";
 import {Button, Grid, createTheme, ThemeProvider} from "@material-ui/core";
 import DescriptionIcon from "@material-ui/icons/Description";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import {useHistory} from "react-router-dom";
 
 function Home() {
     const theme = createTheme({
@@ -13,7 +11,6 @@ function Home() {
             }
         },
     });
-    const history = useHistory();
 
     return (
         <div className="container">
@@ -31,9 +28,9 @@ function Home() {
                             size="large"
                             variant="contained"
                             color="primary"
+                            href="Milaan_Dahiya_resume.pdf"
                             style={{marginRight: '40px', marginLeft: '40px', marginTop: '20px', marginBottom: '20px'}}
                             startIcon={<DescriptionIcon />}
-                            onClick={() => history.push("/resume")}
                         >
                             Resume
                         </Button>

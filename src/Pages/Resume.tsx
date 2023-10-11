@@ -1,4 +1,3 @@
-import React from "react";
 import "../Styles/Home.css";
 import SystemUpdateIcon from "@material-ui/icons/SystemUpdate";
 import {Button, createTheme, ThemeProvider} from "@material-ui/core";
@@ -14,13 +13,7 @@ function Resume() {
 
     return (
         <div style={{backgroundColor: "#525659"}}>
-            <object
-                data="Milaan_Dahiya_resume.pdf"
-                type="application/pdf"
-                height="1150px"
-                width="100%"
-            >
-                <div className="container">
+            <div className="container">
                     <ThemeProvider theme={theme}>
                         <Button
                             size="large"
@@ -38,7 +31,6 @@ function Resume() {
                     <div className="shape-blob three"/>
                     <div className="shape-blob four"/>
                 </div>
-            </object>
         </div>
     );
 }
